@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/thumb_width"
+        android:layout_height="@dimen/thumb_height"
+        android:id="@+id/thumbnail"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:src="@drawable/avatar"
+        android:maxHeight="@dimen/thumb_height"
+        android:maxWidth="@dimen/thumb_width"
+        android:minHeight="@dimen/thumb_height"
+        android:minWidth="@dimen/thumb_width"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:textColor="@color/black"
+        android:id="@+id/movieTitle"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_toEndOf="@+id/thumbnail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/movieType"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignLeft="@+id/movieTitle"
+        android:layout_alignStart="@+id/movieTitle" />
+
+
+</RelativeLayout>
